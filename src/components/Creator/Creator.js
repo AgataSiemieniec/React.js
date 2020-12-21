@@ -6,22 +6,23 @@ import PropTypes from 'prop-types';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
-  }
+    action: PropTypes.node,
+  };
 
   static defaultProps = {
     text: 'Add new item',
-  }
+  };
 
   state = {
     value: '',
     visibleButtons: false,
-  }
+  };
 
   handleChange = event => {
     // console.log(event);
     this.setState({
       value: event.target.value,
-      visibleButtons: event.target.value.length > 0
+      visibleButtons: event.target.value.length > 0,
     });
   }
 
@@ -30,7 +31,7 @@ class Creator extends React.Component {
       this.props.action(this.state.value);
       this.setState({
         value: '',
-        visibleButtons: false
+        visibleButtons: false,
       });
     }
   }
@@ -38,7 +39,7 @@ class Creator extends React.Component {
   handleCancel = () => {
     this.setState({
       value: '',
-      visibleButtons: false
+      visibleButtons: false,
     });
   }
 
