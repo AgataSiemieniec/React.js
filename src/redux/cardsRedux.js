@@ -15,6 +15,7 @@ export const createActionAddCard = payload => ({ payload: { ...payload, id: shor
 
 // reducer
 export default function reducer(state = [], action = {}) {
+  console.log(action);
   switch (action.type) { // switch działa podobnie do if ... else if ...else.
     case ADD_CARD:
       return [...state, action.payload];

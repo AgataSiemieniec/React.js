@@ -5,7 +5,7 @@ export const getColumnsForList = ({columns}, listId) => columns.filter(column =>
 
 // action name creator
 const reducerName = 'columns';
-const createActionName = name => `app/${reducerName}/${name}`; // służy do zmiany nazwy akcji na dłuższy identyfikator
+const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
 export const ADD_COLUMN = createActionName('ADD_COLUMN');
@@ -15,10 +15,10 @@ export const createActionAddColumn = payload => ({ payload: { ...payload, id: sh
 
 // reducer
 export default function reducer(state = [], action = {}) {
-  switch (action.type) { // switch działa podobnie do if ... else if ...else.
+  switch (action.type) {
     case ADD_COLUMN:
       return [...state, action.payload];
     default:
       return state;
   }
-} 
+}
