@@ -10,6 +10,7 @@ export const countVisibleCards  = ({cards}, searchString) => cards.filter(card =
 // actions types
 
 // action creators
+// export const createAction_changeSearchString = payload => ({ payload: payload, type: CHANGE });
 
 // reducer
 export default function reducer(statePart = '', action = {}) {
