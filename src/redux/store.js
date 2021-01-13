@@ -34,7 +34,7 @@ const storeReducer = combineReducers(reducers);
 const store = createStore(
   storeReducer,
   initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // wyrażenie skopiowane z instrukcji implementacji pakietu redux-devtools-extension, czyli pluginu pozwalającego nam na podgląd magazynu w narzędziach developerskich przeglądarki.
 );
 
 export default store;
