@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import App from './App';
+import Home from './Home';
 import {createAction_moveCard} from '../../redux/cardsRedux';
 
 const mapStateToProps = state => ({ //w stałej mapStateToProps zapisujemy funkcję, która definiuje powiązanie propsów ze stanem
@@ -14,5 +14,5 @@ const mapDispatchToProps = dispatch => ({
       createAction_moveCard(payload)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App); //w ostatniej parze nawiasów musimy podać komponent, który jest wykorzystywany w tym kontenerze.
+export default connect(mapStateToProps, mapDispatchToProps)(Home); //w ostatniej parze nawiasów musimy podać komponent, który jest wykorzystywany w tym kontenerze.
 // AppContainer.js - importuje komponent, dla którego jest kontenerem – w tym wypadku App. 

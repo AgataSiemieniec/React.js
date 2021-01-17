@@ -7,7 +7,11 @@ const baseConfig = () => ({
   entry: './src/index.js', // wskazuje, w którym pliku JS znajduje się główny kod aplikacji. Wszystkie pozostałe pliki są importowane w tym pliku itd.
   output: { // wskazuje miejsce, gdzie ma być wygenerowana wersja produkcyjna, stworzona za pomocą npm run bulid. Jest też odpowiedzialny za nazwę pliku, w którym znajdzie się scalony i skonwertowany kod JS naszej aplikacji.
     path: path.join(__dirname, 'dist'),
+    publicPath: '/', //to ustawienie wskaże główne miejsce przechowywania assetów przez naszą aplikację. asza aplikacja będzie działała pod adresami, które domyślnie są traktowane jako podkatalogi projektu.
     filename: 'scripts_bundle.js',
+  },
+  devServer: { //Ustawienie historyApiFallback umożliwi serwowanie pliku index.html, a zarazem naszej aplikacji w sytuacjach, w których serwer zwróciłby błąd 404.
+    historyApiFallback: true,
   },
   module: { // zawiera konfigurację dla różnych typów plików - np. JS czy Sccs. 
     rules: [

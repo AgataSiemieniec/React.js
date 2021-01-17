@@ -10,8 +10,28 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  infoContents: {
+    title: 'Code girl',
+    description: 'Interesting things about me!',
+    image: 'https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  faqContents: {
+    title: 'Frequently asked questions',
+    description: 'Lorem ipsum dolor sit amet',
+    image: 'https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const infoContents = {
+  title: 'Code girl',
+  description: 'Interesting things about me!',
+  image: 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg',
+};
+
+export const faqContents = {
+
 };
 
 export const pageContents = {
