@@ -11,6 +11,7 @@ class Header extends React.Component {
         <Container>
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
+              <Icon name='venus'/>
               <Icon name='code' />
             </Link>
             <nav>

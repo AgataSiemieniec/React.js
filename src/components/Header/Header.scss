@@ -16,6 +16,9 @@
     &:global(.active) {
       color: $color-warning;
     }
+    i {
+      padding: 5px;
+    }
   }
 
 }
